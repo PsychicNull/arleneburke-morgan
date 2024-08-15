@@ -348,6 +348,15 @@ button:hover{
         margin-top: 15%;
         margin-bottom: 25%;
     }
+    
+    /*** SOCIALS ***/
+    .socials {
+        display: block;
+        width: 100%;
+        height: auto;
+        
+        margin-bottom: 25px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -398,6 +407,15 @@ button:hover{
         display: flex;
         width: 100%;
         height: auto;
+    }
+    
+    /*** SOCIALS ***/
+    .socials {
+        display: block;
+        width: 100%;
+        height: auto;
+        
+        margin-bottom: 25px;
     }
 }
 
@@ -450,6 +468,15 @@ button:hover{
         width: 100%;
         height: auto;
     }
+    
+    /*** SOCIALS ***/
+    .socials {
+        display: block;
+        width: 100%;
+        height: auto;
+        
+        margin-bottom: 25px;
+    }
 }
 
 
@@ -501,6 +528,15 @@ button:hover{
         display: flex;
         width: 100%;
         height: auto;
+    }
+    
+    /*** SOCIALS ***/
+    .socials {
+        display: block;
+        width: 100%;
+        height: auto;
+        
+        margin-bottom: 25px;
     }
 }
 
