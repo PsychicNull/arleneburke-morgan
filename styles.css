@@ -313,7 +313,7 @@ button:hover{
 /****************************/
 /********** MOBILE **********/
 /****************************/
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1500px) {
     body {
         background-image: url('./images/abm_landing_page_01.png');
         background-size: cover;
