@@ -1,0 +1,138 @@
+<!-- HTML for Arlene Burke-Morgan Project-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <title>Arlene Burke-Morgan Project</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+              rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="work-frame">
+                
+                <!-- HEADER -->
+                <div class="header">
+                    <div class="header-container">
+                        <div id="image-container">
+                            <img src="images/abm_landing_page_title.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+
+                <!-- COMING SOON -->
+                <div class="coming-soon">
+                    <div class="coming-soon-container">
+                        <p>Website coming soon.</p>
+                        <p>For more information about the work of Arlene Burke-Morgan, 
+                            please fill out the contact form below:</p>
+                    </div>
+                </div>
+                
+                <br>
+
+                <!-- CONTACT FORM-->
+                <div class="contact">
+                    <div class="contact-container">
+                        
+                        <!-- Contact Form -->
+                        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                            <fieldset>
+                                <input type="hidden" name="access_key" value="2807205a-2a7c-4e96-ae25-f7a5f997a59f">
+                        
+                                <!-- Full Name -->
+                                <div>
+                                    <label for="name">Full Name</label>
+                                    <br>
+                                    <input 
+                                        type="text" 
+                                        name="name" 
+                                        id="name"
+                                        placeholder=""
+                                        required
+                                    />
+                                </div>
+                                <br>
+
+                                <!-- Email Address -->
+                                <div>
+                                    <label for="email">Email Address</label>
+                                    <br>
+                                    <input 
+                                        type="email" 
+                                        name="email"
+                                        id="email"
+                                        placeholder=""
+                                        required
+                                    />
+                                </div>
+                                <br>
+
+                                <!-- Subject Line -->
+                                <div>
+                                    <label for="subject">Subject</label>
+                                    <br>
+                                    <input 
+                                        type="text" 
+                                        name="subject"
+                                        id="subject"
+                                        placeholder=""
+                                    />
+                                </div>
+                                <br>
+
+                                <!-- Message Box -->
+                                <div>
+                                    <label for="message">Message</label>
+                                    <br>
+                                    <textarea rows="20" name="message" id="message" required></textarea>
+                                </div>
+                                <br>
+
+                                <button type="submit">Submit Form</button>
+
+                                <!-- Result redirect with js instead of custom URL -->
+                                <div id="result"></div>
+
+                                <!-- User key -->
+                                <input type="hidden" name="apikey" value="2807205a-2a7c-4e96-ae25-f7a5f997a59f"/>
+
+                                <!-- Honeypot check -->
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;"/>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                <br>
+                
+                <div class="socials">
+                    <a href="https://www.instagram.com/arleneburkemorganarchive/" target="_blank" id="socials-container"></a>
+                </div>
+
+            </div>
+        </div>
+        
+        
+        <!-- LOAD JS SCRIPTS -->
+        <script 
+            src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+        
+        <script src="/js/redirect.js"></script>
+        
+    </body>
+</html>

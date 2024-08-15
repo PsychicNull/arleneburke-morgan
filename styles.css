@@ -1,0 +1,314 @@
+/** CSS for Arlene Burke-Morgan Project **/
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-image: url('./images/abm_landing_page_01.png');
+    background-size: cover;
+    background-position: center top;   
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Makes the background fixed when scrolling */
+}
+
+p {
+    color: #f6f8ff;
+    font-family: "Montserrat";
+    font-size: 18px;
+}
+
+@font-face{
+    font-family: 'DidotBold';
+    src: url('fonts/didot/Didot Bold.otf');
+    
+}
+
+a:link {
+    color: #f6f8ff;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #f6f8ff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #f6f8ff;
+    text-decoration: underline;
+}
+
+a:active{
+    color: #f6f8ff;
+    text-decoration: underline;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    background-image: url('img/lazy-load_01.png'); /* Small placeholder image */
+    background-size: cover;
+}
+
+#image-container{
+    display: block;
+    width: 670px;
+    height: auto;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#image-container p{
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+
+/****************************/
+/*********** MAIN ***********/
+/****************************/
+
+/*** CONTAINER ***/
+.container{
+    display: block;
+    width: 45%; 
+    height: auto; 
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.work-frame{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 35px;
+}
+
+
+/*** HEADER ***/
+.header{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.header-container{
+    margin: 0 0 0 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+
+/*** COMING SOON ***/
+.coming-soon {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.coming-soon-container {
+    margin: 0 0 0 0;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*** CONTACT ***/
+.contact {
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.contact-container {
+    margin: 0 0 0 0;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/*** SOCIALS ***/
+.socials {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#socials-container{
+    display: block;
+    width: 35px;
+    height: 35px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    background-image: url('images/abm_landing_page_ig.svg');
+    background-size: cover;
+    background-position: center top;   
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Makes the background fixed when scrolling */
+}
+
+
+/****************************/
+/******* CONTACT FORM *******/
+/****************************/
+form {
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    height: auto;
+
+    text-align: left;
+}
+
+fieldset {
+    padding: 0;
+    border: none;
+}
+
+input, textarea, button {
+    width: 100%;
+}
+
+input {
+    background-color: #f6f8ff;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    border-top: none;
+    border-bottom: 1px solid #f6f8ff;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #f6f8ff, 0 1px 0 #f6f8ff;
+    outline: 0;
+    padding: 8px 6px;
+}
+
+input:focus {
+    background-color: #f6f8ff;
+    box-shadow: none;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+    width: 100%;
+    height: 200px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    border-top: none;
+    border-bottom: 1px solid #f6f8ff;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #f6f8ff, 0 1px 0 #f6f8ff;
+    outline: 0;
+    padding: 8px 6px;
+
+    scrollbar-width: thin; /* 'auto' or 'thin' */
+    scrollbar-color: #f6f8ff #ffffff;
+}
+
+textarea:focus {
+    background-color: #f6f8ff;
+    box-shadow: none;
+}
+
+/* For WebKit (Chrome, Edge, Safari) */
+textarea::-webkit-scrollbar {
+    width: 3px; /* Width of the scrollbar */
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #ffffff; /* Track color */
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #f6f8ff; /* Handle color */
+}
+
+/* Scrollbar changes on hover */
+textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #9a9b9f; /* Darker color on hover */
+    width: 3px; /* Make it thicker on hover */
+}
+
+label{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f6f8ff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#name, #email, #subject, #message{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+button{
+    height: 3em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    
+    color: #f6f8ff;
+    background-color: rgba(246, 248, 255, .25);
+    border: 1px solid #f6f8ff;
+    border-radius: 2px;
+}
+
+button:hover{
+    background-color: rgba(246, 248, 255, 1);
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+    border: 2px solid #f6f8ff;
+}
+
+/* Result message */
+.result-message {
+    color: #28a745; /* Success color, change as needed */
+    background-color: #dff0d8; /* Light background, change as needed */
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em; /* Larger text */
+}
+
+.result-message.error {
+    color: #dc3545; /* Error color */
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+/****************************/
+/****************************/
+
+
+/****************************/
+/********** MOBILE **********/
+/****************************/
+@media screen and (max-width: 1080px) {
+    /*** FILL OUT ***/
+}
